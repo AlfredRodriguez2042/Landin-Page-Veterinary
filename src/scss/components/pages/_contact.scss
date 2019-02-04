@@ -1,0 +1,38 @@
+.service-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width:1024px) {
+        width: 80%;
+    }
+    .service-titles{
+        width: 100%;
+        text-align: center;
+
+    }
+    .grid{
+        --rem: 2rem;
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-gap: 20px;
+        box-sizing: border-box;
+        @media (min-width:760px) {
+            grid-template-columns: repeat(2, calc( (100% - var(--rem)*1 )/2));
+        }
+    }
+    .service{
+        position: relative;
+        box-sizing: border-box;
+        .icon{
+            position: absolute;
+            top: 3px;
+            font-size: 1.3em;
+            color: $color1;  
+        }
+    }
+    .subtitle-service, .text{
+        padding-left: 2em;
