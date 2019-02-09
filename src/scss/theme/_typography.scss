@@ -1,11 +1,29 @@
-.text{
+.text, .personal-title{
     line-height: 2rem;
     color: var(--color-text);
     padding-bottom: 2em;
 }
-.service-title{
+.wraper-title{
     color: grey;
 }
-.service-span{
+.wraper-span{
     color: var(--color-text);
 }
+.wraper-titles{
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: 3em;
+}
+.white-title{
+    color: #ddd;
+    font-weight: 300;
+    .white-span{
+        color: white;
+        font-weight: 600;
+    }
+}
+// .wraper-titles{
+//     margin-bottom: 3em;
+//     padding-top: 2em;
+// }

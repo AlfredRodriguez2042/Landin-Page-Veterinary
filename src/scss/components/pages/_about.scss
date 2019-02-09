@@ -1,6 +1,7 @@
 .content-about{
     width: 100%;
     height: auto;
+    margin-bottom: 4em;
     .grid{
         --rem: 2rem;
         position: relative;
@@ -49,12 +50,16 @@
     --imge: url(./assets/img/mascota.jpg);
         background: linear-gradient(rgba($color1, .8), rgba($color1, .8)), var(--imge) no-repeat center center/cover;
         box-sizing: border-box;
-        padding: 1em 1em;
-       z-index: -5;
-       display: grid;
-       grid-template-columns: repeat(2, calc( (100% - 1rem*1)/2 )  );
-       @media (min-width:1024px) {
-           display: flex;
+       .features-wraper{
+           width: 90%;
+           max-width: 1200px;
+           margin-left: auto;
+           margin-right: auto;
+           display: grid;
+           grid-template-columns: repeat(2, calc( (100% - 1rem*1)/2 )  );
+           @media (min-width:1024px) {
+            display: flex;
+        }
        }
         .features{
             flex: auto;

@@ -5,12 +5,14 @@
 
 @import './base/base';
 
+@import './theme/typography';
+
 @import './components/menu';
 @import './components/buttons';
 @import './components/pages/home';
 @import './components/pages/about';
-@import './components/pages/contact';
+@import './components/pages/service';
 @import './components/pages/galery';
+@import './components/pages/contact';
 
 
-@import './theme/typography';

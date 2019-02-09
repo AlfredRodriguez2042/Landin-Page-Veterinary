@@ -1,0 +1,79 @@
+.content-galery{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    //max-width: 1200px;
+    .galery-item{
+        width: calc( 100% /2 );
+        @media (min-width:1024px) {
+            width: calc( 100% /3 );
+            opacity: .6;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}
+.content-pricing{
+    .pricing{
+        width: 90%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        @media (min-width:800px) {
+            margin-top: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    .pricing-table{
+        border: 1px solid $color1;
+        box-sizing: border-box;
+        list-style: none;
+        text-align: center;
+        padding-bottom: 2em;
+        margin-bottom: 2rem;
+        @media (min-width:800px) {
+            width:30%;
+        }
+        .wraper-title{
+            --imge: url(./assets/img/mascota.jpg);
+            background: linear-gradient(rgba($color1, .9), rgba($color1, .9)), var(--imge) no-repeat center center/cover;
+            padding: 1em;
+            color: rgba(white, .7);
+            margin-bottom: 1em;
+        }
+        .wraper-span{
+            color: white;
+            font-weight: 600;
+            padding-left: .2em;
+        }
+        .btn-ghost{
+            display: inline-block;
+            margin-top: 1em;
+        }
+    }
+    .table-feature, .table-prince{
+       margin-bottom: 1em;
+       width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       border-bottom: 1px solid grey;
+       font-size: 1.5em;
+    }
+    .table-prince{
+        font-size: 2.5em;
+    }
+   
+}

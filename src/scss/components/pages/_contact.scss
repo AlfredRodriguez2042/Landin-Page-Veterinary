@@ -1,38 +1,83 @@
-.service-container{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    @media (min-width:1024px) {
-        width: 80%;
-    }
-    .service-titles{
+.section-testimonial{
+    --image: url(./assets/img/faces.jpg);
+    width: 100%;
+    background: linear-gradient( rgba($color1, .9), rgba($color1, .9)), var(--image) no-repeat center center/cover; 
+    margin-bottom: 4rem;
+    .slider-testimonial{
         width: 100%;
         text-align: center;
-
-    }
-    .grid{
-        --rem: 2rem;
-        position: relative;
-        width: 100%;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-gap: 20px;
-        box-sizing: border-box;
-        @media (min-width:760px) {
-            grid-template-columns: repeat(2, calc( (100% - var(--rem)*1 )/2));
+        @media (min-width:1024px) {
+            width: 80%;
+            margin: auto;
+            max-width: 700px;
         }
     }
-    .service{
-        position: relative;
-        box-sizing: border-box;
-        .icon{
-            position: absolute;
-            top: 3px;
-            font-size: 1.3em;
-            color: $color1;  
+    .slider{
+        margin: auto;
+        max-width: 700px;
+        .image-slider{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin: auto;
+            background: grey;
+            margin-bottom: 2em;
         }
     }
-    .subtitle-service, .text{
+    .dots{
+        text-align: center;
+    }
+    .dot{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: rgba(white, .3);
+        display: inline-block;
+        transition: background-color .5s ease;
+    }
+    .active-dot{
+        background: white;
+    }
+    
+}
+.wraper-personal{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .personal{
+        --rem: 5rem;
+     border: 1px solid $color1;
+     width: calc( (100% - var(--rem))/1 );
+     padding-bottom: 2em;
+     text-align: center;
+     margin-bottom: 4rem;
+     @media (min-width:760px) {
+        width: calc( (100% - var(--rem))/2 );
+     }
+     @media (min-width:1024px) {
+        width: calc( (100% - var(--rem))/3 );
+     }
+    }
+    .text{
         padding-left: 2em;
+        padding-right: 1em;
+        text-align: left;
+    }
+    .personal-img{
+       width: 100%;
+       min-height: 400px;
+       margin-bottom: 1.5em;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.content-personal{
+    
+}
