@@ -1,0 +1,14 @@
+.btn-ghost{
+    text-decoration: none;
+    border: 1px solid $color2;
+    padding: .5em 2em;
+    color: $color2;
+    box-sizing: border-box;
+    &:hover{
+        background: $color2;
+        color: white;
+    }
+    &:active{
+        transform: scale(.99);
+    }
+}
